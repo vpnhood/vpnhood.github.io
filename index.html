@@ -2,37 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5;url=https://www.vpnhood.com" />
+    <meta http-equiv="refresh" content="5;url=https://www.vpnhood.com">
     <title>Redirecting to VPNHood</title>
     <style>
         body {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: 'Arial', sans-serif;
             text-align: center;
             padding: 50px;
-            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            display: inline-block;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         h1 {
-            color: #333;
+            color: #007bff;
         }
         p {
             color: #666;
         }
         a {
-            color: #007bff;
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
             text-decoration: none;
+            transition: background-color 0.3s;
         }
         a:hover {
-            text-decoration: underline;
+            background-color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to VPNHood</h1>
-    <p>You are being redirected to the real VPNHood website. If the redirect does not work, please <a href="https://www.vpnhood.com" onclick="clearTimeout(redirectTimeout)">click here</a>.</p>
+    <div class="container">
+        <h1>Welcome to VPNHood</h1>
+        <p>You are being redirected to the real VPNHood website. If the redirect does not work, please <a href="https://www.vpnhood.com" onclick="clearTimeout(redirectTimeout)">click here</a>.</p>
+    </div>
     <script>
-        // Set a timeout for the redirect to allow cancellation
         var redirectTimeout = setTimeout(function() {
             window.location.href = 'https://www.vpnhood.com';
-        }, 5000); // 5000 milliseconds = 5 seconds
+        }, 3000);
     </script>
 </body>
 </html>
